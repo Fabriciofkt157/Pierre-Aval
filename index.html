@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avaliação cega · qual resposta soa mais natural?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">A</span><span class="brand-mark alt">B</span>
+        <span class="brand-name">avaliação cega</span>
+      </div>
+      <div class="progress" id="progress">0 avaliados</div>
+    </header>
+
+    <main id="app">
+      <section id="loading-state" class="state-card">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Carregando um item para avaliar…</p>
+      </section>
+
+      <section id="empty-state" class="state-card" hidden>
+        <p class="empty-title">Sem itens novos por aqui.</p>
+        <p>Você já avaliou todos os pares disponíveis neste navegador. Obrigado!</p>
+      </section>
+
+      <section id="error-state" class="state-card" hidden>
+        <p class="empty-title">Algo não funcionou.</p>
+        <p id="error-message">Não foi possível carregar os dados.</p>
+        <button id="retry-btn" class="btn btn-ghost">Tentar de novo</button>
+      </section>
+
+      <section id="vote-state" class="vote-card" hidden>
+        <div class="prompt-block">
+          <span class="eyebrow">prompt</span>
+          <p id="prompt-text" class="prompt-text"></p>
+        </div>
+
+        <div class="responses">
+          <article class="response-card" id="card-a" data-choice="A" tabindex="0">
+            <span class="response-label">Resposta A</span>
+            <p class="response-text" id="text-a"></p>
+            <button class="btn btn-choose" data-choice="A">Essa soa mais natural</button>
+          </article>
+
+          <article class="response-card" id="card-b" data-choice="B" tabindex="0">
+            <span class="response-label">Resposta B</span>
+            <p class="response-text" id="text-b"></p>
+            <button class="btn btn-choose" data-choice="B">Essa soa mais natural</button>
+          </article>
+        </div>
+
+        <p class="hint">Dica: use as setas <kbd>←</kbd> / <kbd>→</kbd> do teclado para escolher.</p>
+      </section>
+
+      <section id="thanks-state" class="state-card" hidden>
+        <div class="check">✓</div>
+        <p>Voto registrado. Carregando o próximo…</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Você não sabe — e nem deveria saber — qual resposta veio de qual modelo. É esse o ponto.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

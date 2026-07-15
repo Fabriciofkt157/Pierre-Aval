@@ -1,0 +1,9 @@
+{
+  "name": "blind-eval-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend serverless (Vercel) para sistema de avaliação cega A/B, usando o repositório GitHub como armazenamento de resultados.",
+  "engines": {
+    "node": ">=18"
+  }
+}
