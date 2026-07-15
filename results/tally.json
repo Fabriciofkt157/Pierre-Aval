@@ -19,6 +19,10 @@
     "base": 0,
     "pierre": 1
   },
+  "23": {
+    "base": 1,
+    "pierre": 0
+  },
   "32": {
     "base": 1,
     "pierre": 0
