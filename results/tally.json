@@ -131,6 +131,10 @@
     "base": 1,
     "pierre": 0
   },
+  "72": {
+    "base": 0,
+    "pierre": 1
+  },
   "74": {
     "base": 1,
     "pierre": 0
