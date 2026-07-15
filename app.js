@@ -1,6 +1,5 @@
-// ⚠️ Troque pela URL do seu backend depois de fazer o deploy no Vercel (ou similar).
-// Exemplo: "https://blind-eval-backend.vercel.app/api"
-const API_BASE = "https://SEU-BACKEND.vercel.app/api";
+
+const API_BASE = "https://pierre-aval.vercel.app/api";
 
 const SEEN_KEY = "blindeval_seen_ids";
 const COUNT_KEY = "blindeval_count";
