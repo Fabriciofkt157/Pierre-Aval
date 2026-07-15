@@ -207,6 +207,10 @@
     "base": 1,
     "pierre": 0
   },
+  "97": {
+    "base": 0,
+    "pierre": 1
+  },
   "99": {
     "base": 1,
     "pierre": 0
