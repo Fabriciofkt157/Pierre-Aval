@@ -7,6 +7,10 @@
     "base": 1,
     "pierre": 0
   },
+  "7": {
+    "base": 0,
+    "pierre": 1
+  },
   "8": {
     "base": 0,
     "pierre": 1
