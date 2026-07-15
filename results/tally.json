@@ -47,6 +47,10 @@
     "base": 0,
     "pierre": 1
   },
+  "69": {
+    "base": 1,
+    "pierre": 0
+  },
   "71": {
     "base": 1,
     "pierre": 0
