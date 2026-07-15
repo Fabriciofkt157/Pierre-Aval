@@ -96,7 +96,14 @@ async function withRetry(fn, retries = 4) {
  */
 async function getItems() {
   const path = process.env.ITEMS_PATH || "items.jsonl";
-  const { content } = await getFile(path);
+  const { sha, content } = await getFile(path);
+  if (sha === null) {
+    const { GITHUB_REPO, GITHUB_BRANCH } = env();
+    throw new Error(
+      `items.jsonl não encontrado em "${path}" no repositório ${GITHUB_REPO} (branch "${GITHUB_BRANCH}"). ` +
+        `Confira se o arquivo está nesse caminho exato, ou ajuste a variável de ambiente ITEMS_PATH.`
+    );
+  }
   return content
     .split("\n")
     .map((line) => line.trim())
