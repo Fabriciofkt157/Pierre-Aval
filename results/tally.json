@@ -63,6 +63,10 @@
     "base": 0,
     "pierre": 1
   },
+  "56": {
+    "base": 1,
+    "pierre": 0
+  },
   "58": {
     "base": 1,
     "pierre": 0
