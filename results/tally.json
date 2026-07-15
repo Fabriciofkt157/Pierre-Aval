@@ -151,6 +151,10 @@
     "base": 0,
     "pierre": 2
   },
+  "83": {
+    "base": 1,
+    "pierre": 0
+  },
   "85": {
     "base": 1,
     "pierre": 1
